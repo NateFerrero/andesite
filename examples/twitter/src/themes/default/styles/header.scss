@@ -1,0 +1,30 @@
+.header {
+  background-color: #e0245e;
+  color: white;
+
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .header-section {
+    padding: 10px;
+
+    button {
+      border-radius: 100px;
+      box-shadow: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      white-space: nowrap;
+      background: transparent;
+      color: inherit;
+      border: 1px solid white;
+      margin-left: 10px;
+    }
+  }
+}

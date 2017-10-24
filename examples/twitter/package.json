@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.5",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "preact": "^8.2.4",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "scripts": {
+    "make-env": "ls ./.env > /dev/null 2>&1 || cp src/config/env-defaults ./.env",
+    "build": "node_modules/.bin/webpack",
+    "build-prod": "ENV=prod LANGUAGE=en yarn run build",
+    "start": "yarn run make-env > /dev/null 2>&1; (set -a; . ./.env && node_modules/.bin/webpack-dev-server --hot --inline)"
+  }
+}
